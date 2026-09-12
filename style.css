@@ -167,3 +167,7 @@ ul {
 .tech-stack {
   margin-top: 2rem;
 }
+
+.tech-stack h3 {
+  font-size: 1.3rem; /* adjust to taste */
+}
