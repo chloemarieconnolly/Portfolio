@@ -113,6 +113,8 @@ h1 {
 .about h2 {
   color: #C47A5C;
   margin-top: 0;
+  font-family:"EB Garamond", serif;
+  font-size: 6.5rem;
 }
 
 ul {
