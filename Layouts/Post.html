@@ -1,1 +1,127 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {{ page.title }} | Chloe Marie Connolly
+  </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
+
+</head>
+
+<body>
+
+  <aside class="sidebar">
+
+    <a class="nav-box"
+       href="{{ '/' | relative_url }}">
+       Home
+    </a>
+
+    <a class="nav-box"
+       href="{{ '/projects.html' | relative_url }}">
+       Projects
+    </a>
+
+    <a class="nav-box"
+       href="{{ '/blog.html' | relative_url }}">
+       Blog
+    </a>
+
+    <a class="nav-box"
+       href="{{ '/stargazers.html' | relative_url }}">
+       Stargazers
+    </a>
+
+  </aside>
+
+
+  <main class="content">
+
+    <div class="header-wrap">
+
+      <div class="stars" aria-hidden="true">
+
+        <span class="star star1">✦</span>
+        <span class="star star2">✦</span>
+        <span class="star star3">✦</span>
+        <span class="star star4">✦</span>
+        <span class="star star5">✦</span>
+        <span class="star star6">✦</span>
+        <span class="star star7">✦</span>
+        <span class="star star8">✦</span>
+        <span class="star star9">✦</span>
+        <span class="star star10">✦</span>
+        <span class="star star11">✦</span>
+        <span class="star star12">✦</span>
+        <span class="star star13">✦</span>
+        <span class="star star14">✦</span>
+        <span class="star star15">✦</span>
+        <span class="star star16">✦</span>
+        <span class="star star17">✦</span>
+        <span class="star star18">✦</span>
+        <span class="star star19">✦</span>
+
+      </div>
+
+    </div>
+
+
+    <article class="blog-post">
+
+      <h1>
+        {{ page.title }}
+      </h1>
+
+      <p class="blog-date">
+        {{ page.date | date: "%d %B %Y" }}
+      </p>
+
+
+      {% if page.categories %}
+
+      <div class="blog-tags">
+
+        {% for category in page.categories %}
+
+        <span class="blog-tag">
+          {{ category }}
+        </span>
+
+        {% endfor %}
+
+      </div>
+
+      {% endif %}
+
+
+      <div class="post-content">
+
+        {{ content }}
+
+      </div>
+
+    </article>
+
+  </main>
+
+</body>
+
+</html>
