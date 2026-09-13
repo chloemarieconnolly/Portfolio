@@ -10,7 +10,4 @@ Log of current and past projects
 Research and Learning blog tracking my masters
 
 # Stargazers
-Log of stared repositories - based on github quickstart guide 
-
-# References 
-Gates, S. (2025) HTML & CSS Web Design for Beginners: A Comprehensive Step-by-Step Starter Guide to Designing Responsive, Dynamic, and Modern Websites. 2nd edn.
+Log of stared repositories - based on github quickstart guide  
