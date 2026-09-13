@@ -6,7 +6,7 @@ Personal profile & Tech Stack
 # Projects 
 Log of current and past projects
 
-#Blog
+# Blog
 Research and Learning blog tracking my masters
 
 # Stargazers
