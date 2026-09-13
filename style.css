@@ -175,9 +175,9 @@ ul {
 }
 
 
-/* =========================
-   BLOG
-   ========================= */
+
+
+/* =====BLOG====== */
 
 .blog {
   max-width: 1000px;
@@ -337,23 +337,3 @@ ul {
   margin: 1.5rem 0;
 }
 
-/* Mobile */
-
-@media (max-width: 700px) {
-
-  .blog-list {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-post {
-    padding: 1.5rem;
-  }
-
-  .blog-post h1 {
-    font-size: 3rem;
-  }
-
-  .blog-post h2 {
-    font-size: 2rem;
-  }
-}
