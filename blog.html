@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<main class="content blog">
+
+    <h1>Blog</h1>
+  </div>
+
+  <p class="blog-intro">
+    Research notes, projects and things I'm learning.
+  </p>
+
+  <div class="blog-list">
+
+    {% for post in site.posts %}
+
+    <article class="blog-card">
+
+      <h2>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+
+      <p class="blog-date">
+        {{ post.date | date: "%d %B %Y" }}
+      </p>
+
+      <p class="blog-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 30 }}
+      </p>
+
+      {% if post.categories %}
+
+      <div class="blog-tags">
+
+        {% for category in post.categories %}
+
+        <span class="blog-tag">
+          {{ category }}
+        </span>
+
+        {% endfor %}
+
+      </div>
+
+      {% endif %}
+
+      <a class="read-more" href="{{ post.url | relative_url }}">
+        Read more →
+      </a>
+
+    </article>
+
+    {% endfor %}
+
+  </div>
+
+</main>
