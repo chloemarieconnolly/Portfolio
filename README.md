@@ -1,13 +1,13 @@
 The purpose of this Repository is a both a personal profile, a log of current projects/ research and as a base to practise html and CSS skills.
 
-# Homepage
+## Homepage
 Personal profile & Tech Stack 
 
-# Projects 
+## Projects 
 Log of current and past projects
 
-# Blog
+## Blog
 Research and Learning blog tracking my masters
 
-# Stargazers
+## Stargazers
 Log of stared repositories - based on github quickstart guide  
